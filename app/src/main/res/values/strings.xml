@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SecondTask_20250327</string>
+    <string name="enter_text_here">Enter text here</string>
+    <string name="output">Output</string>
+    <string name="button">Calculate</string>
+    <string-array name="calculation_types">
+        <item>Word Count</item>
+        <item>Character Count</item>
+    </string-array>
+</resources>
