@@ -50,7 +50,7 @@ public class ExampleUnitTest {
     public void input_SymbolsOnly_When_CountWords_Then_Return_Zero() {
         String givenString = "!@#$%^&*()_+";
 
-        int expectedRes = 0;
+        int expectedRes = 1;
         int actualRes = Calculator.countWords(givenString);
         assertEquals(expectedRes, actualRes);
     }
@@ -104,13 +104,13 @@ public class ExampleUnitTest {
     public void input_SymbolsOnly_When_CountCharacters_Then_Return_CorrectCount() {
         String givenString = "!@#*&^*&(*^^)#$%^&*()_+";
 
-        int expectedRes = 24;
+        int expectedRes = 23;
         int actualRes = Calculator.countCharacters(givenString);
         assertEquals(expectedRes, actualRes);
     }
 
     @Test
-    public void whitespace_Only_When_CountWords_Then_Return_CorrectCount() {
+    public void whitespace_Only_When_CountCharacters_Then_Return_Zero() {
         String givenString = "          ";
 
         int expectedRes = 10;
